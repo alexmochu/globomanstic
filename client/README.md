@@ -1,6 +1,6 @@
 # client
 
-> globomantics project frontend
+> globomantics frontend
 
 ## Build Setup
 
