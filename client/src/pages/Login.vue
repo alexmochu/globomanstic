@@ -1,10 +1,10 @@
 <template>
   <v-container>
     <v-layout wrap row>
-      <v-flex xs12 sm4 offset-sm4>
-        <h2>Login to Globomantics</h2>
+      <v-flex xs12 sm4 offset-sm4 mb-4>
+        <h2 class="text-xs-center display-1">Login to Globomantics</h2>
       </v-flex>
-      <v-flex xs12 sm4 offset-sm4>
+      <v-flex xs12 sm4 offset-sm4 mb-3>
         <v-text-field
           label="E-main"
           v-model="email"
@@ -17,9 +17,11 @@
           type="password"
           required/>
       </v-flex>
-      <v-flex xs12 sm4 offset-sm4>
-        <v-btn @click="cancel">Cancel</v-btn>
-        <v-btn color="primary" @click="login">Login</v-btn>
+      <v-flex xs12>
+        <v-layout wrap row justify-center>
+          <v-btn @click="cancel">Cancel</v-btn>
+          <v-btn color="primary" @click="login">Login</v-btn>
+        </v-layout>
       </v-flex>
     </v-layout>
     <v-snackbar
